@@ -3,24 +3,28 @@
     "name": "Timer React TS",
     "description": "Experience enhanced productivity with the Timer React TS project. Crafted using TypeScript and React, this application draws inspiration from the Pomodoro technique. Seamlessly manage work intervals with customizable timers and breaks, boosting your efficiency and focus.",
     "link": "https://github.com/dantas15/timer-react-ts",
-    "icon": "fa-clock"
+    "icon": "fa-clock",
+    "image": "https://source.unsplash.com/800x600/?productivity"
   },
   {
     "name": "Image Upload",
     "description": "Embark on a journey of seamless image uploading through the Image Upload project. Spanning the realms of full-stack JavaScript development, this project leverages Netlify for the frontend and Heroku for the backend. Immerse yourself in the world of efficient image uploading to Cloudinary.",
     "link": "https://github.com/dantas15/image-upload-node-react",
-    "icon": "fa-image"
+    "icon": "fa-image",
+    "image": "https://source.unsplash.com/800x600/?upload"
   },
   {
     "name": "Eventify",
     "description": "Introducing Eventify – a versatile platform powered by Vue.js, Node.js, and MongoDB. Seamlessly orchestrate events of all scales with ease. Dive into the world of event management and creation, with a monorepo housing both frontend and backend components, nurtured during an enriching trainee experience at Comp Junior.",
     "link": "https://github.com/dantas15/eventify-compjr",
-    "icon": "fa-calendar"
+    "icon": "fa-calendar",
+    "image": "https://source.unsplash.com/800x600/?event"
   },
   {
     "name": "Gus' Digital Garden",
     "description": "Explore the verdant expanse of Gus' Digital Garden – an amalgamation of portfolio and digital sanctuary. This realm offers a glimpse into my projects, musings, and reflections, cultivating a digital landscape rich with insights spanning the realms of software development, technology, and beyond.",
     "link": "https://dantas15.github.io/garden",
-    "icon": "fa-leaf"
+    "icon": "fa-leaf",
+    "image": "https://source.unsplash.com/800x600/?garden"
   }
 ]
