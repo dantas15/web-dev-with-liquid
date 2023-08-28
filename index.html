@@ -1,3 +1,7 @@
+---
+# empty front matter just to make this a valid file for liquid
+---
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -60,9 +64,9 @@
             </h2>
             <p>
               Hello! I'm a passionate computer science student and software developer based in Brazil.<br />
-              My journey in the world of technology has led me to explore the exciting realms of web development using JavaScript and TypeScript.<br />
-              As an active member of a junior enterprise, I thrive on applying my technical skills to real-world projects and collaborating with fellow enthusiasts.<br />
-              Beyond coding, I also have a keen interest in the dynamic field of digital marketing, where I strive to leverage my technical expertise<br />
+              My journey in the world of technology has led me to explore the exciting realms of web development using JavaScript and TypeScript.
+              As an active member of a junior enterprise, I thrive on applying my technical skills to real-world projects and collaborating with fellow enthusiasts.
+              Beyond coding, I also have a keen interest in the dynamic field of digital marketing, where I strive to leverage my technical expertise
               to create innovative solutions that bridge the gap between technology and effective outreach.
             </p>
           </header>
@@ -95,51 +99,20 @@
             </p>
           </header>
           <ul class="features">
-            <li class="icon fa-paper-plane">
-              <h3>Arcu accumsan</h3>
+            {% for project in site.data.projects %}
+            <li class="icon {{ project.icon }}">
+              <h3>{{ project.name }}</h3>
+              <span class="image right"><img class="" src="{{ project.image }}" alt="{{ project.name }}"></span>
               <p>
-                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-                tincidunt nullam amet leo Aenean ligula consequat consequat.
+                {{ project.description | truncatewords: 30 }}
               </p>
+              <a href="{{ project.link }}" class="button">View Project</a>
             </li>
-            <li class="icon solid fa-laptop">
-              <h3>Ac Augue Eget</h3>
-              <p>
-                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-                tincidunt nullam amet leo Aenean ligula consequat consequat.
-              </p>
-            </li>
-            <li class="icon solid fa-code">
-              <h3>Mus Scelerisque</h3>
-              <p>
-                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-                tincidunt nullam amet leo Aenean ligula consequat consequat.
-              </p>
-            </li>
-            <li class="icon solid fa-headphones-alt">
-              <h3>Mauris Imperdiet</h3>
-              <p>
-                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-                tincidunt nullam amet leo Aenean ligula consequat consequat.
-              </p>
-            </li>
-            <li class="icon fa-heart">
-              <h3>Aenean Primis</h3>
-              <p>
-                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-                tincidunt nullam amet leo Aenean ligula consequat consequat.
-              </p>
-            </li>
-            <li class="icon fa-flag">
-              <h3>Tortor Ut</h3>
-              <p>
-                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-                tincidunt nullam amet leo Aenean ligula consequat consequat.
-              </p>
-            </li>
+            {% endfor %}
           </ul>
         </div>
       </section>
+      
 
 			<section id="contact" class="wrapper style5">
         <div class="inner">
