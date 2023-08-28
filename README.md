@@ -1,5 +1,11 @@
 # web-dev-with-liquid
 
+## How to run
+
+```bash
+bundle exec jekyll serve
+```
+
 ## Open Source Licenses
 
 - HTML 5 (HTML template):
